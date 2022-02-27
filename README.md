@@ -1,1 +1,1 @@
-# CPP-prime-exercise
+# Cpp-premier-exercise
