@@ -12,4 +12,4 @@ $(prom): $(obj)
 	$(CPP) -c $< -o $@
 
 clean:
-	rm -rf $(obj)  $(prom)
+	rm -rf *.out *.o
