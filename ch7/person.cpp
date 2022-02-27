@@ -1,0 +1,29 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+class Person {
+    friend istream &read(std::istream &is, Person &person);
+    friend ostream &print(std::ostream &os, const Person &person);
+public:
+    Person() = default;
+    Person(const string sname, const string saddr):name(sname), address(saddr){ }
+    Person(istream &is){ read(is, *this); }
+    string getName() const { return name; }
+    string getAddress() const { return address; }
+private:
+    string name;
+    string address;
+};
+
+istream &read(std::istream &is, Person &person)
+{
+    is >> person.name >> person.address;
+    return is;
+}
+
+ostream &print(std::ostream &os, const Person &person)
+{
+    os << person.name << " " << person.address;
+    return os;
+}
