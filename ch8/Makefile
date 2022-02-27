@@ -1,15 +1,10 @@
 CPP=g++
-src=$(target)
+src=8.4_read_from_file 8.1
 deps=
-obj= $(src:%.cpp=%.o)
-prom= $(src:%.cpp=%.out)
 
+all: ${src}
 
-$(prom): $(obj)
-	$(CPP) $(obj) -o $(prom) 
-
-%.o:%.cpp
-	$(CPP) -c $< -o $@
-
+%: %.cpp
+	$(CPP)  $< -o $@
 clean:
-	rm -rf *.out *.o
+	rm -rf ${src}
