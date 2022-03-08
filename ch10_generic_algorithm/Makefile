@@ -1,5 +1,5 @@
 CPP=g++
-src=algorithm_sample 10.6
+src=algorithm_sample exercise
 # deps=
 # obj= $(src:%.cpp=%.o)
 # prom= $(src:%.cpp=%.out)
