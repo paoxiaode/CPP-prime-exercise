@@ -42,7 +42,6 @@ int main(){
     //accumulate double
     vector<double> vec_dou(2.0, 5);
     cout << "The sum of double vector is " << accumulate(vec_dou.cbegin(), vec_dou.cend(), double(0)) << endl;
-
     return 0;
 
     

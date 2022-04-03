@@ -8,7 +8,7 @@ src=8.1 8.4_read_from_file 8.10_istringstream 8.11_istringstream fstream_flag
 all: $(src)
 
 %:%.cpp
-	$(CPP) $< -o $@
+	$(CPP) $< -o tmp/$@
 
 clean:
 	rm -rf $(src)
