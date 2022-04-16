@@ -1,4 +1,3 @@
-
 # 顺序容器
 
 * vector: 可变大小数组
@@ -43,11 +42,38 @@ c.at(n)               同上
 
 ## string
 
-**数值转换**
+**修改string**
+
+```cpp
+string s
+s.insert(pos, args)     在pos前插入args
+s.erase(pos, len)       删除从pos开始的len个字符
+s.append(args)          将args插入到s的末尾
+s.replace()
+
+```
+
+**查询string**
+
+```cpp
+搜索操作返回指定字符的下标，若未找到则返回npos
+s.find(args)
+s.rfind(args)
+s.find_first_of(args)
+s.find_first_not_of(args)
+s.find_last_of(args)
+s.find_lasst_not_of(args)
+```
+
+**转换**
 
 ```cpp
 # int2string
 to_string(val)
+
+# string2char*
+string s;
+s.c_str();
 
 # string2int
 stoi(s, p, b)           s string, p size_t指针, b 转换基数
@@ -58,7 +84,7 @@ stoll(s, p, b)          long long
 # string2float
 stof(s, p)              float
 stod(s, p)              double
-stold(s, p)             long double            
+stold(s, p)             long double        
 
 ```
 
@@ -70,6 +96,7 @@ stold(s, p)             long double
 > stack适配器接受顺序容器，使其操作像stack一样
 
 ### stack
+
 默认由deque构造，也可用list、vector构造
 
 ```cpp
@@ -86,7 +113,9 @@ s.top();                  返回栈顶元素，不弹出
 ```
 
 ### queue/priority_queue
+
 queue默认由deque（list、vector）实现，priority_queue默认由vector（deque）实现。
+
 ```cpp
 # 初始化
 stack<int> s;
@@ -102,13 +131,3 @@ q.back();                  返回末尾元素，不弹出
 
 q.top();                   返回最高优先级元素，只适用于priority_queue
 ```
-
-
-
-
-
-
-
-
-
-

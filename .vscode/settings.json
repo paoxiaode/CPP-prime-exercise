@@ -45,6 +45,9 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "map": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp"
     }
 }

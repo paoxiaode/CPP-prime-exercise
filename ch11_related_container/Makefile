@@ -1,5 +1,5 @@
 CPP=g++
-src=algorithm_sample exercise lambda 4.3_reverse_iter
+src=11.3 11.4 11.7 11.9 11.12 11.20 11.29 11.33
 # deps=
 # obj= $(src:%.cpp=%.o)
 # prom= $(src:%.cpp=%.out)
